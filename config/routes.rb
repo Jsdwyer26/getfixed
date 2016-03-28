@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-
-  get 'secret/index'
-
+ 
   root to: "bikes#index"
   # use resources to set all CRUD routes for bikes
   resources :bikes do
@@ -61,9 +59,12 @@ Rails.application.routes.draw do
 	get "/signup" => "users#new"
 	post "/users" => "users#create"
   put "users/:id" => "users#update"
-
+  # IG search page
+  get 'secret/index' 
+  
   resources :users, :except => [:index]
 
   resource :contact, only: [:new, :create]
+
 
 end

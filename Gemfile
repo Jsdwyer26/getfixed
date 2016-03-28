@@ -50,6 +50,9 @@ gem 'friendly_id', '~> 5.1.0'
 # instagram gem
 gem 'instagram'
 
+#httparty gem
+gem 'httparty'
+
 # another gem for heroku
 group :production do
   gem 'rails_12factor'
