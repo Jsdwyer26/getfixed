@@ -14,6 +14,7 @@ class SecretController < ApplicationController
   def index
     #@instagram = Instagram.user_recent_media("2486700", {:count => 8})
     @instagram = Instagram.user_recent_media("3008367581")
+    # Sample searching tag "fixedgear"
     @ig_tags = instagram_photos("fixedgear")
   end
 end
